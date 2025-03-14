@@ -1,8 +1,7 @@
 package br.ce.wcaquino.servicos;
 
-
-
 import static br.ce.wcaquino.builders.FilmeBuilder.umFilme;
+
 import static br.ce.wcaquino.builders.FilmeBuilder.umFilmeSemEstoque;
 import static br.ce.wcaquino.builders.LocacaoBuilder.umLocacao;
 import static br.ce.wcaquino.builders.UsuarioBuilder.umUsuario;
@@ -65,6 +64,7 @@ public class LocacaoServiceTest {
 	@Before
 	public void setup(){
 		MockitoAnnotations.initMocks(this);
+		
 	}
 	
 	@Test
