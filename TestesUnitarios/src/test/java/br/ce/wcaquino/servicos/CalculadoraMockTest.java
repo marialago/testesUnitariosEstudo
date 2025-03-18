@@ -50,9 +50,8 @@ public class CalculadoraMockTest {
 		
 		ArgumentCaptor<Integer> argCapt = ArgumentCaptor.forClass(Integer.class);
 		Mockito.when(calc.somar(argCapt.capture(), argCapt.capture())).thenReturn(5);
-				
+		
 		Assert.assertEquals(5, calc.somar(134345, -234));
-
-		System.out.println(argCapt.getAllValues());
+//		System.out.println(argCapt.getAllValues());
 	}
 }
